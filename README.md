@@ -10,7 +10,6 @@ Sample projects for logging on Windows, including:
 
 Example queries:
 * Last 5 critical or error events from the "System" log: `wevtutil qe "System" /q:"*[System/Level<=2]" /c:5 /rd:true /f:text`
-* Last 5 application installation events: `wevtutil qe "Application" /q:"*/System/Provider[@Name='MsiInstaller']" /c:5 /rd:true /f:text`
 * All events with warning or higher severity from "Application" log the last 24 hours: `wevtutil qe "Application" /q:"*[System[(Level>=1) and (Level<=3) and TimeCreated[timediff(@SystemTime) <= 86400000]]]" /f:text`
 
 `/rd:true` means events are displayed from newest to oldest, and `/f:text` displays them as text instead of XML. 86400000 is the number of milliseconds in 24 hours.
@@ -72,6 +71,10 @@ Installation success:
 
 Need to restart afterwards:  
 ![image](https://github.com/user-attachments/assets/f20751a9-7e54-47c6-9978-6f70d2db4010)  
+
+
+Query to retrieve the last 5 SW installation events:
+`wevtutil qe "Application" /q:"*/System/Provider[@Name='MsiInstaller']" /c:5 /rd:true /f:text`
 
 Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com/en-us/windows/win32/msi/event-logging)
 
