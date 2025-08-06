@@ -31,10 +31,14 @@ Disk and filesystem problems are automaticaly logged:
 ![image](https://github.com/user-attachments/assets/b148863a-3d67-4b81-a64f-4bb66384e136)  
 ![image](https://github.com/user-attachments/assets/8011024f-be1d-4dd7-8a46-c9b9023a25ec)
 
-### HW device failures
+### HW device events
 HW device failures are automatically logged:  
 ![image](https://github.com/user-attachments/assets/723867a3-6bb5-4405-8719-967240e72781)  
 ![image](https://github.com/user-attachments/assets/9a095ccd-cccd-4e7a-84af-93c47936adb9)
+
+
+Query to retrieve the last 5 HW events:
+`wevtutil qe "Microsoft-Windows-Kernel-PnP/Configuration" /q:"*/System/Provider[@Name='Microsoft-Windows-Kernel-PnP']" /c:5 /rd:true /f:text`
 
 ### GPU problems
 GPU watchdog recovery:  
