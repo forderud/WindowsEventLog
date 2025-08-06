@@ -2,8 +2,8 @@ Sample projects for logging on Windows, including:
 * `MyEventProvider`: Project for defining logging schemas.
 * `MyEventLogger`: C++ project for logging through the provider.
 * `MyEventLoggerCs`: C# project for logging through the provider.
-* `EventQuery`: C++ project for querying Windows event logs.
-* `EventSubscribe`: C++ project for listening to Windows event logs.
+* `EventQuery`: C++ project for querying Windows event logs (similar to wevtutil).
+* `EventSubscribe`: C++ project for listening to new Windows event logs.
 
 ## wevtutil tool
 [wevtutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil) can be used to query the Windows Event log from the command-line.
