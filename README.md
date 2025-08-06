@@ -14,7 +14,11 @@ Example queries:
 
 `/rd:true` means events are displayed from newest to oldest, and `/f:text` displays them as text instead of XML. 86400000 is the number of milliseconds in 24 hours.
 
-Event severity level values: Critical (`System/Level=1`), Error (`System/Level=2`), Warning (`System/Level=3`), Information (`System/Level=4`).
+#### Event severity level values
+1. Critical: `System/Level=1`
+2. Error: `System/Level=2`
+3. Warning: `System/Level=3`
+4. Information: `System/Level=4`
 
 NOTICE: `System/Level=0` information events have been observed in the "Application" log.
 
