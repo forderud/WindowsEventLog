@@ -31,6 +31,9 @@ Disk and filesystem problems are automaticaly logged:
 ![image](https://github.com/user-attachments/assets/b148863a-3d67-4b81-a64f-4bb66384e136)  
 ![image](https://github.com/user-attachments/assets/8011024f-be1d-4dd7-8a46-c9b9023a25ec)
 
+Query to retrieve the last 5 disk events:
+`wevtutil qe "System" /q:"*/System/Provider[@Name='disk']" /c:5 /rd:true /f:text`
+
 ### HW device events
 HW device failures are automatically logged:  
 ![image](https://github.com/user-attachments/assets/723867a3-6bb5-4405-8719-967240e72781)  
