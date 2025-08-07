@@ -14,6 +14,14 @@ Example queries:
 
 `/rd:true` means events are displayed from newest to oldest, and `/f:text` displays them as text instead of XML. 86400000 is the number of milliseconds in 24 hours.
 
+## Logging fundamentals
+
+### XPath queries
+One can use `XPath` queries to query for events from a log channel as described in [Consuming Events](https://learn.microsoft.com/en-us/windows/win32/wes/consuming-events).
+
+Documentation for the associated Windows [Event type schema](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-even6/8c61aef7-bd4b-4edb-8dfd-3c9a7537886b).
+
+
 ### Event severity level values
 1. Critical: `System/Level=1`
 2. Error: `System/Level=2`
@@ -92,4 +100,4 @@ Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com
 ## Documentation
 * ~~[Event Logging](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging)~~ (old APIs)
 * [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log) (new APIs)
-* Windows [Event type schema](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-even6/8c61aef7-bd4b-4edb-8dfd-3c9a7537886b)
+
