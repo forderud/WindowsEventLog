@@ -62,6 +62,22 @@ GPU watchdog recovery:
 High GPU resource usage:  
 ![image](https://github.com/user-attachments/assets/ea8aaa33-fb50-4640-8506-5c7f01570471)
 
+### SW installation results
+Installation failure:  
+![image](https://github.com/user-attachments/assets/5f780f94-44a5-4e63-b27b-bff437054709)  
+
+Installation success:  
+![image](https://github.com/user-attachments/assets/275f6497-32fa-44e4-a4b8-dafa4816c468)  
+
+Need to restart afterwards:  
+![image](https://github.com/user-attachments/assets/f20751a9-7e54-47c6-9978-6f70d2db4010)  
+
+
+Query to retrieve the last 5 SW installation events:
+`wevtutil qe "Application" /q:"*/System/Provider[@Name='MsiInstaller']" /c:5 /rd:true /f:text`
+
+Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com/en-us/windows/win32/msi/event-logging)
+
 ### Firewall logs
 Logging of dropped packets by the firewall: (logging _not_ enabled by default)  
 ![image](https://github.com/user-attachments/assets/4c01cd9f-2a6b-4963-9d30-c2a2b776a5c7)
@@ -80,22 +96,6 @@ Applications not starting due to insufficient whitelisting:
 Reason for unexpected system reboots:  
 ![image](https://github.com/user-attachments/assets/0164914d-c894-4347-904b-bfa60e65bda7)
 
-
-### SW installation results
-Installation failure:  
-![image](https://github.com/user-attachments/assets/5f780f94-44a5-4e63-b27b-bff437054709)  
-
-Installation success:  
-![image](https://github.com/user-attachments/assets/275f6497-32fa-44e4-a4b8-dafa4816c468)  
-
-Need to restart afterwards:  
-![image](https://github.com/user-attachments/assets/f20751a9-7e54-47c6-9978-6f70d2db4010)  
-
-
-Query to retrieve the last 5 SW installation events:
-`wevtutil qe "Application" /q:"*/System/Provider[@Name='MsiInstaller']" /c:5 /rd:true /f:text`
-
-Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com/en-us/windows/win32/msi/event-logging)
 
 ## Documentation
 * ~~[Event Logging](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging)~~ (old APIs)
