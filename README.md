@@ -30,7 +30,7 @@ Documentation for the associated Windows [Event type schema](https://learn.micro
 
 NOTICE: `System/Level=0` information events have been observed in the "Application" log.
 
-## Example of log channel properties
+### Log channel properties
 Logging destination folders are referred to as "channels". Each channel can be configured with maximum size and retention policy settings:  
 ![image](https://github.com/user-attachments/assets/85c440c0-143b-4d2b-803a-95ed9dcf971b)
 
