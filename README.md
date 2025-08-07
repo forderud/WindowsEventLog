@@ -9,7 +9,7 @@ Sample projects for logging on Windows, including:
 [wevtutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/wevtutil) can be used to query the Windows Event log from the command-line.
 
 Example queries:
-* Last 5 critical or error events from the "System" log: `wevtutil qe "System" /q:"*/System/Level<=2" /c:5 /rd:true /f:text`
+* Last 5 critical or error events from the "System" log: `wevtutil qe "System" /q:"*/System[Level<=2]" /c:5 /rd:true /f:text`
 * All events with warning or higher severity from "Application" log the last 24 hours: `wevtutil qe "Application" /q:"*[System[(Level>=1) and (Level<=3) and TimeCreated[timediff(@SystemTime) <= 86400000]]]" /f:text`
 
 `/rd:true` means events are displayed from newest to oldest, and `/f:text` displays them as text instead of XML. 86400000 is the number of milliseconds in 24 hours.
