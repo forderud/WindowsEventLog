@@ -28,7 +28,7 @@ Documentation for the associated Windows [Event type schema](https://learn.micro
 3. Warning: `Level=3`
 4. Information: `Level=4`
 
-NOTICE: `Level=0` information events have been observed in the "Application" log.
+NOTICE: `Level=0` information events have also been observed in the "Application" log.
 
 ### Log channel properties
 Logging destination folders are referred to as "channels". Each channel can be configured with maximum size and retention policy settings:  
