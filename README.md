@@ -52,8 +52,8 @@ HW device failures are automatically logged:
 ![image](https://github.com/user-attachments/assets/9a095ccd-cccd-4e7a-84af-93c47936adb9)
 
 
-Query to retrieve the last 5 HW events:
-`wevtutil qe "Microsoft-Windows-Kernel-PnP/Configuration" /q:"*/System/Provider[@Name='Microsoft-Windows-Kernel-PnP']" /c:5 /rd:true /f:text`
+Query to retrieve the last 5 HW configuration errors:
+`wevtutil qe "Microsoft-Windows-Kernel-PnP/Configuration" /q:"*/System[Level<=2]" /c:5 /rd:true /f:text`
 
 ### GPU problems
 GPU watchdog recovery:  
