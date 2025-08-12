@@ -23,12 +23,12 @@ Documentation for the associated Windows [Event type schema](https://learn.micro
 
 
 ### Event severity level values
-1. Critical: `System/Level=1`
-2. Error: `System/Level=2`
-3. Warning: `System/Level=3`
-4. Information: `System/Level=4`
+1. Critical: `Level=1`
+2. Error: `Level=2`
+3. Warning: `Level=3`
+4. Information: `Level=4`
 
-NOTICE: `System/Level=0` information events have been observed in the "Application" log.
+NOTICE: `Level=0` information events have been observed in the "Application" log.
 
 ### Log channel properties
 Logging destination folders are referred to as "channels". Each channel can be configured with maximum size and retention policy settings:  
