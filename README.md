@@ -79,7 +79,8 @@ Query to retrieve the last 5 SW installation events:
 Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com/en-us/windows/win32/msi/event-logging)
 
 ### Shutdown problems
-<img width="893" height="631" alt="image" src="https://github.com/user-attachments/assets/5417dd6f-1408-49e1-80f3-d31b230a37bf" />
+Applications delaying system shutdown:  
+![image](https://github.com/user-attachments/assets/5417dd6f-1408-49e1-80f3-d31b230a37bf)
 
 
 ### Firewall logs
