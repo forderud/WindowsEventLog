@@ -79,8 +79,11 @@ Query to retrieve the last 5 SW installation events:
 Event ID code doc: [Windows Installer Event Logging](https://learn.microsoft.com/en-us/windows/win32/msi/event-logging)
 
 ### Firewall logs
-Logging of dropped packets by the firewall: (logging _not_ enabled by default)  
+Logging of dropped packets by the firewall: 
 ![image](https://github.com/user-attachments/assets/4c01cd9f-2a6b-4963-9d30-c2a2b776a5c7)
+
+
+Firewall logging is _not_ enabled by default. [Configure Windows Firewall logging](https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/configure-logging) desribes how to enable it.
 
 ### Application whitelising (WDAC) problems
 Applications not starting due to insufficient whitelisting:  
