@@ -115,3 +115,6 @@ Reason for unexpected system reboots:
 * ~~[Event Logging](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging)~~ (old APIs)
 * [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log) (new APIs)
 
+## Logging on other platforms
+* Apple developer: [Logging](https://developer.apple.com/documentation/os/logging)
+* Android app: [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
