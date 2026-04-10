@@ -40,6 +40,7 @@ Logging destination folders are referred to as "channels". Each channel can be c
 * `Analytic` – Very high volume, fine-grained, off by default. For deep dives only.
 * `Debug` – For developers and very specific troubleshooting.
 
+Analytic and Debug logs are hidden and disabled by default; you have to enable them manually in Event Viewer when you actually need that level of noise.
 
 ## Examples of logged events
 Some examples of system problems automatically logged by Windows. All of these events can also be accessed through the Windows Event Log APIs.
