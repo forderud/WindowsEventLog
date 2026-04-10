@@ -34,6 +34,12 @@ NOTICE: `Level=0` information events have also been observed in the "Application
 Logging destination folders are referred to as "channels". Each channel can be configured with maximum size and retention policy settings:  
 ![image](https://github.com/user-attachments/assets/85c440c0-143b-4d2b-803a-95ed9dcf971b)
 
+### Common log sub-types
+* `Admin` – “Something broke, here’s the error and what you can do.”
+* `Operational` – Designed for trend analysis and troubleshooting. Perfect for building alerts.
+* `Analytic` – Very high volume, fine-grained, off by default. For deep dives only.
+* `Debug` – For developers and very specific troubleshooting.
+
 
 ## Examples of logged events
 Some examples of system problems automatically logged by Windows. All of these events can also be accessed through the Windows Event Log APIs.
