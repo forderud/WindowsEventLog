@@ -118,6 +118,12 @@ Reason for unexpected system reboots:
 * [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log) (new APIs)
 
 ## Logging on other platforms
-* Apple developer: [Logging](https://developer.apple.com/documentation/os/logging)
-* Apple developer: [Generating Log Messages from Your Code](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code) with `os_log`
-* Android app: [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
+
+#### Apple logging
+* [Logging](https://developer.apple.com/documentation/os/logging)
+* [Generating Log Messages from Your Code](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code) with `os_log`
+* [Explore logging in Swift](https://developer.apple.com/videos/play/wwdc2020/10168/) video (claim: logs stored on device in conpressed form)
+
+
+#### Android logging
+* [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
