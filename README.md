@@ -127,4 +127,4 @@ Reason for unexpected system reboots:
 
 #### Android logging
 * Android: [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
-* NDK [Logging](https://developer.android.com/ndk/reference/group/logging) from `#include <android/log.h>`
+* NDK [Logging](https://developer.android.com/ndk/reference/group/logging) (`#include <android/log.h>`)
