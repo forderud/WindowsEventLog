@@ -119,5 +119,5 @@ Reason for unexpected system reboots:
 
 ## Logging on other platforms
 * Apple developer: [Logging](https://developer.apple.com/documentation/os/logging)
-* Apple developer: [Generating Log Messages from Your Code](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code)
+* Apple developer: [Generating Log Messages from Your Code](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code) with `os_log`
 * Android app: [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
