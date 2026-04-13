@@ -123,7 +123,7 @@ Reason for unexpected system reboots:
 * [Logging](https://developer.apple.com/documentation/os/logging)
 * [Generating Log Messages from Your Code](https://developer.apple.com/documentation/os/generating-log-messages-from-your-code) with `os_log`
 * [Explore logging in Swift](https://developer.apple.com/videos/play/wwdc2020/10168/) video (claim: logs stored on device in conpressed form)
-
+* Xcode: [Acquiring crash reports and diagnostic logs](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs)
 
 #### Android logging
 * [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
