@@ -126,5 +126,5 @@ Reason for unexpected system reboots:
 * Xcode: [Acquiring crash reports and diagnostic logs](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs)
 
 #### Android logging
-* [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
+* Android: [Understand logging](https://source.android.com/docs/core/tests/debug/understanding-logging)
 * NDK [Logging](https://developer.android.com/ndk/reference/group/logging) from `#include <android/log.h>`
