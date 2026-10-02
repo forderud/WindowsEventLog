@@ -114,7 +114,7 @@ Reason for unexpected system reboots:
 
 
 ## Documentation
-* ~~[Event Logging](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging)~~ (old APIs)
+* [Event Logging](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-logging) (old legacy APIs)
 * [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log) (new APIs)
 
 ## Logging on other platforms
