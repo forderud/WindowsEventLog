@@ -11,15 +11,6 @@ int wmain() {
     // generate log entries defined by the provider
     {
         WORD type = EVENTLOG_ERROR_TYPE; //  or other EVENTLOG_xxx type
-        WORD category = UI_CATEGORY; // source-specific category
-        DWORD eventId = MSG_INVALID_COMMAND; // entry in the message file associated with the event source
-        const BYTE data[] = "Extra command details";
-
-        wprintf(L"Writing log entry...\n");
-        log.ReportUserData(type, category, eventId, sizeof(data), data);
-    }
-    {
-        WORD type = EVENTLOG_ERROR_TYPE; //  or other EVENTLOG_xxx type
         WORD category = DATABASE_CATEGORY; // source-specific category
         DWORD eventId = MSG_BAD_FILE_CONTENTS; // entry in the message file associated with the event source
         const wchar_t* messages[] = { L"somefile.txt" };
@@ -44,6 +35,15 @@ int wmain() {
 
         wprintf(L"Writing log entry...\n");
         log.ReportInsertStrings(type, category, eventId, std::size(messages), messages);
+    }
+    {
+        WORD type = EVENTLOG_ERROR_TYPE; //  or other EVENTLOG_xxx type
+        WORD category = UI_CATEGORY; // source-specific category
+        DWORD eventId = MSG_INVALID_COMMAND; // entry in the message file associated with the event source
+        const BYTE data[] = "Extra command details";
+
+        wprintf(L"Writing log entry...\n");
+        log.ReportUserData(type, category, eventId, sizeof(data), data);
     }
 
     wprintf(L"[done]\n");
