@@ -25,6 +25,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventSubscribe", "EventSubscribe\EventSubscribe.vcxproj", "{2CCBE1D8-2F03-451E-AA65-F7374D7FA0EB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyLegacyEventLogger", "MyLegacyEventLogger\MyLegacyEventLogger.vcxproj", "{8E5047D3-F8F3-40FE-8A9C-2F8E20C85829}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7D5FFAA-D26D-4708-94F7-20205E880CEB} = {B7D5FFAA-D26D-4708-94F7-20205E880CEB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyLegacyEventProvider", "MyLegacyEventProvider\MyLegacyEventProvider.vcxproj", "{4FADAF43-9BE7-4A30-8720-9D294AA3B7B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +61,10 @@ Global
 		{8E5047D3-F8F3-40FE-8A9C-2F8E20C85829}.Debug|x64.Build.0 = Debug|x64
 		{8E5047D3-F8F3-40FE-8A9C-2F8E20C85829}.Release|x64.ActiveCfg = Release|x64
 		{8E5047D3-F8F3-40FE-8A9C-2F8E20C85829}.Release|x64.Build.0 = Release|x64
+		{4FADAF43-9BE7-4A30-8720-9D294AA3B7B1}.Debug|x64.ActiveCfg = Debug|x64
+		{4FADAF43-9BE7-4A30-8720-9D294AA3B7B1}.Debug|x64.Build.0 = Debug|x64
+		{4FADAF43-9BE7-4A30-8720-9D294AA3B7B1}.Release|x64.ActiveCfg = Release|x64
+		{4FADAF43-9BE7-4A30-8720-9D294AA3B7B1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
