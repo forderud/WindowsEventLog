@@ -8,6 +8,7 @@
 /** C++ RAII wrapper for legacy "Event Logging". */
 class EventLogger {
 public:
+    /**  The provider might be app-specific, "Application", "System" or other. */
     EventLogger(const wchar_t* provider) {
         m_log = RegisterEventSourceW(NULL, provider);
         if (!m_log) {
@@ -26,7 +27,11 @@ public:
         m_log = 0;
     }
 
-    /** Write log entry with insertion strings. */
+    /** Write log entry with insertion strings.
+      - type: EVENTLOG_xxx type
+      - category: category (optional)
+      - eventId: app-defined event ID
+    */
     void ReportInsertStrings(WORD type, WORD category, DWORD eventId, WORD stringCount, const wchar_t* strings[]) {
         BOOL ok = ReportEventW(m_log, type, category, eventId, NULL, stringCount, /*raw data bytes*/0, strings, /*raw data*/NULL);
         if (!ok) {
