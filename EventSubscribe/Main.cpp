@@ -62,11 +62,11 @@ DWORD WINAPI SubscriptionCallback(EVT_SUBSCRIBE_NOTIFY_ACTION action, PVOID /*pC
         // You should only get the EvtSubscribeActionError action if your subscription flags 
         // includes EvtSubscribeStrict and the channel contains missing event records.
     case EvtSubscribeActionError:
-        if (ERROR_EVT_QUERY_RESULT_STALE == (DWORD)hEvent) {
+        if (ERROR_EVT_QUERY_RESULT_STALE == (size_t)hEvent) {
             wprintf(L"The subscription callback was notified that event records are missing.\n");
             // Handle if this is an issue for your application.
         } else {
-            wprintf(L"The subscription callback received the following Win32 error: %lu\n", (DWORD)hEvent);
+            wprintf(L"The subscription callback received the following Win32 error: %llu\n", (size_t)hEvent);
         }
         break;
 
