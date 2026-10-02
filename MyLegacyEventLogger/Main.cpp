@@ -40,7 +40,7 @@ int wmain() {
         WORD type = EVENTLOG_ERROR_TYPE; //  or other EVENTLOG_xxx type
         WORD category = UI_CATEGORY; // source-specific category
         DWORD eventId = MSG_INVALID_COMMAND; // entry in the message file associated with the event source
-        const BYTE data[] = "Extra command details";
+        const BYTE data[] = "Extra command details (not shown)";
 
         wprintf(L"Writing log entry...\n");
         log.ReportUserData(type, category, eventId, sizeof(data), data);
