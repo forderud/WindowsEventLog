@@ -16,7 +16,7 @@ int wmain() {
         const wchar_t* messages[] = { L"somefile.txt" };
 
         wprintf(L"Writing log entry...\n");
-        log.ReportInsertStrings(type, category, eventId, std::size(messages), messages);
+        log.ReportInsertStrings(type, category, eventId, messages);
     }
     {
         WORD type = EVENTLOG_WARNING_TYPE; // or other EVENTLOG_xxx type
@@ -25,7 +25,7 @@ int wmain() {
         const wchar_t* messages[] = { L"25", L"zero" };
 
         wprintf(L"Writing log entry...\n");
-        log.ReportInsertStrings(type, category, eventId, std::size(messages), messages);
+        log.ReportInsertStrings(type, category, eventId, messages);
     }
     {
         WORD type = EVENTLOG_INFORMATION_TYPE; //  or other EVENTLOG_xxx type
@@ -34,7 +34,7 @@ int wmain() {
         const wchar_t* messages[] = { L"8", L"2" };
 
         wprintf(L"Writing log entry...\n");
-        log.ReportInsertStrings(type, category, eventId, std::size(messages), messages);
+        log.ReportInsertStrings(type, category, eventId, messages);
     }
     {
         WORD type = EVENTLOG_ERROR_TYPE; //  or other EVENTLOG_xxx type
