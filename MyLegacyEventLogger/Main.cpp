@@ -6,7 +6,7 @@
 
 int wmain() {
     // open event provider
-    EventLogger log(L"MyLegacyEventProvider"); // or L"Application" or L"System"
+    EventLogger log(L"MyLegacyEventProvider"); // ends up in the "Application" log
 
     // generate log entries defined by the provider
     {
