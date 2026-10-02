@@ -32,8 +32,8 @@ public:
       - category: category (optional)
       - eventId: app-defined event ID
     */
-    void ReportInsertStrings(WORD type, WORD category, DWORD eventId, WORD stringCount, const wchar_t* strings[]) {
-        BOOL ok = ReportEventW(m_log, type, category, eventId, NULL, stringCount, /*raw data bytes*/0, strings, /*raw data*/NULL);
+    void ReportInsertStrings(WORD type, WORD category, DWORD eventId, WORD stringCount, const wchar_t* strings[], PSID userSid = nullptr) {
+        BOOL ok = ReportEventW(m_log, type, category, eventId, userSid, stringCount, /*raw data bytes*/0, strings, /*raw data*/NULL);
         if (!ok) {
             _com_error err(GetLastError());
             wprintf(L"ERROR: ReportEventW failed (%s)\n", err.ErrorMessage());
@@ -42,8 +42,8 @@ public:
     }
 
     /** Write log entry with extra user-defined binary data. */
-    void ReportUserData(WORD type, WORD category, DWORD eventId, DWORD rawdataSize, const BYTE* rawdata) {
-        BOOL ok = ReportEventW(m_log, type, category, eventId, NULL, /*strCount*/0, rawdataSize, /*strings*/NULL, (void*)rawdata);
+    void ReportUserData(WORD type, WORD category, DWORD eventId, DWORD rawdataSize, const BYTE* rawdata, PSID userSid = nullptr) {
+        BOOL ok = ReportEventW(m_log, type, category, eventId, userSid, /*strCount*/0, rawdataSize, /*strings*/NULL, (void*)rawdata);
         if (!ok) {
             _com_error err(GetLastError());
             wprintf(L"ERROR: ReportEventW failed (%s)\n", err.ErrorMessage());
