@@ -52,7 +52,6 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <ModuleDefinitionFile>module.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
       <Command>mc.exe MyLegacyEventProvider.mc
@@ -74,7 +73,6 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <ModuleDefinitionFile>module.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
       <Command>mc.exe MyLegacyEventProvider.mc
@@ -88,7 +86,6 @@
     <ResourceCompile Include="MyLegacyEventProvider.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="module.def" />
     <None Include="MyLegacyEventProvider.mc" />
     <None Include="README.md" />
   </ItemGroup>
