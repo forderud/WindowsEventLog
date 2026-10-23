@@ -2,6 +2,8 @@ Sample projects for logging on Windows, including:
 * `MyEventProvider`: Project for defining a custom logging schema.
 * `MyEventLogger`: C++ project for logging through the provider.
 * `MyEventLoggerCs`: C# project for logging through the provider.
+* `MyLegacyEventProvider`: Project for defining a custom logging schema
+* `MyLegacyEventLogger`: C++ project for logging through the provider.
 * `EventQuery`: C++ project for querying Windows event logs (similar to wevtutil).
 * `EventSubscribe`: C++ project for listening to new log events.
 
